@@ -12,5 +12,17 @@ nomeAluno = "Miguel Vargas Ferreira"
 nota1 = 7.5 
 nota2 = 8.0
 nota3 = 9.5
-somaDasNotas = nota1 + nota2 + nota3
-print({somaDasNotas})
+soma_notas = (nota1 + nota2 + nota3) / 3
+
+print("======================================")
+print(f"Nome:  {nomeAluno}")
+print(f"Nota 1:  {nota1}")
+print(f"Nota 2:  {nota2}")
+print(f"Nota 3:  {nota3}")
+print(f"Media das notas: {soma_notas:.2f}")
+print("=====================================")
+nota2 = 6.5
+soma_notas = (nota1 + nota2 + nota3) / 3
+
+print(f"Nota 2 - alterada - 6.5")
+print(f"Nova media: {soma_notas:.2f}")
