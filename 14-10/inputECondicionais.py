@@ -251,3 +251,7 @@ else:
 print("Fim.")
 
 # Apenas um dos caminhos vai ser seguido - print("Primeira condição atendida.")
+
+# Curiosidades 
+
+# captalize, upper, lower, title, strip, split, replace, find, count, isdigit, isalpha, isalnum, isspace, startswith, endswith
