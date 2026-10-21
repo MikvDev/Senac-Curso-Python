@@ -17,7 +17,7 @@
 
 
 tempo_permanecia = int(input("Digite a quantidade de horas permanecidadas:"))
-tempo_calc = 0
+
 if tempo_permanecia < 0:    
     print("Valor invalido! Horas menores que 0 não são permitidas")
 elif tempo_permanecia <= 2:
@@ -26,6 +26,7 @@ elif tempo_permanecia > 2 and tempo_permanecia <= 5:
     print("Você deverá pagar R$20 reais de estacionamento!")
 elif tempo_permanecia > 5:
     print("Você deverá pagar R$30 reais de estacionamento!")
+
 
 
     

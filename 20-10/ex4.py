@@ -21,8 +21,21 @@ salario_mensal = float(input("Digite seu salário mensal:"))
 emprestimo_solicitado = float(input("Digite o valor desejado para o emprestimo: "))
 quantidade_parcelas = int(input("Digite a quantidade de parcelas:"))
 
-if salario_mensal > 2000:
-    if (emprestimo_solicitado * 10) > salario_mensal:
-        print("Valor não pode ultrapassar 10x o salário")
-    elif(quantidade_parcelas ):
-    
+if salario_mensal >= 2000:
+    if  salario_mensal > (emprestimo_solicitado * 10) :
+        print("Valor não pode ultrapassar 10 vezes seu salário")
+    elif(emprestimo_solicitado / quantidade_parcelas) > (salario_mensal * 0.30):
+       print("Valor não pode ultrapassar 30% do salario")
+    elif quantidade_parcelas >= 1 and  quantidade_parcelas <= 48:
+            valorParcelas = emprestimo_solicitado / quantidade_parcelas
+            print("================================")
+            print(f"Emprestimo: {emprestimo_solicitado:.2f}")
+            print(f"Parcelas: {quantidade_parcelas}")
+            print(f"Valor por parcelas: {valorParcelas:.2f}")
+            print("================================")
+
+    else:
+            print("Imprestimo recusado! Quantidade de parecelas é maior que 50")
+
+else:
+    print("Seu salário é inválido - Salário minimo é 2.000!")

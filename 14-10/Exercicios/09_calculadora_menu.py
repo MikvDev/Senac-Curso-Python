@@ -6,18 +6,20 @@ number_one = float(input("Digite um numero:"))
 number_two = float(input("Digite um numero:"))
 
 print("============ Menu ===============" \
-"n1 - Somar" \
-"n2 - Subtrair" \
-"n3 - Multiplicar" \
-"n4 - Dividir" )
+"\n1 - Somar" \
+"\n2 - Subtrair" \
+"\n3 - Multiplicar" \
+"\n4 - Dividir" )
 
-if number_one == 1:
+op = int(input("Digite a opção desejada:"))
+
+if op == 1:
     print("Soma:", number_one + number_two)
-elif number_one == 2:
+elif op == 2:
     print("Subtração:", number_one - number_two)
-elif number_one == 3:
+elif op == 3:
     print("Multiplicação:", number_one * number_two)
-elif number_one == 4:
+elif op == 4:
     if number_two != 0:
         print("Divisão:", number_one / number_two)
     else:
