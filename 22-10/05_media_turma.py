@@ -4,7 +4,7 @@
 
 # A quantidade de alunos deve ser maior que zero.
 
-
+#nao começe por aneiais do poder 
 
 studentNumber = int(input("Digite a quantidade de alunos:"))
 grade = 0
